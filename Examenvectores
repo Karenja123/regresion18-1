@@ -1,0 +1,82 @@
+ve1<-c(11:31)
+ma1<-matrix(11:31,4,5,T)
+ma1
+rownames(ma1)<-c("toluca","pachuca", "gdl", "mty")
+colnames(ma1)<-c("escuela1", "escuela2", "escuela3", "escuela4", "escuela5")
+ma1
+
+dat1<-ma1[1,3]
+dat1
+dat2<-ma1[3,5]
+dat2
+dat3<-ma1[2,1]
+dat3
+
+
+#"ejercicio2"
+ma2<-matrix(1:18,6,3,T)
+ma2
+dat4<-ma2[3,3]
+dat4
+
+#ejercicio3
+s<-matrix(1:9,nrow = 3)
+s
+mul1<-s[,1]*s[,2]
+mul1
+
+#ejercicio4
+a<-c("pequeño","largo","enorme")
+a
+b<-a!="largo"
+b
+a[b]
+
+
+#ejercicio5
+#con la funcion pie
+
+facu<-c("economia","derecho","contabilidad","artes")
+facu
+#licenciaturas de fac
+lic<-c("actuaria", "d.mercantil", "administracion", "abtraccion")
+lic
+#calificacion
+cali<-c("8.7", "9.3", "9.6", "7.3")
+cali
+class(facu)
+class(lic)
+class(cali)
+datesc<-data.frame(facu,lic,cali)
+datesc
+#eliminar3
+datesc[-3,]
+
+#ejercicio6
+
+edad<-c(32, 35, 43, 25)
+edad
+nomb<-c("carlos","juan","raquel","paty")
+nomb
+sit<-c("casado","soltero","soltero","union libre")
+sit
+segsocial<-c("IMSS","IMSS","ISSSTE","PRIVADO")
+segsocial
+prof<-c("contador","carpintero","profesora","diseñador")
+prof
+matpers<-cbind(nomb, edad, segsocial, sit, prof)
+matpers
+
+#ejercicio7
+vec3<-c(matpers[2,5],matpers[4,5])
+vec3
+vec4<-c(matpers[3,3], matpers[1,3])
+vec4
+vec5<-c(matpers[4,4], matpers[2,4])
+vec5
+v6<-sum(edad)
+v6
+
+
+
+
